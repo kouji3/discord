@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body , html {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.intro {
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 100vw;
+    height: 70vh;
+    
+    position: relative;
+    padding-top: 5px;
+    padding-inline: 45px;
+    
+
+}
+
+.intro-img {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    object-position: 5% 15%;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle {
+    display: flex;
+    font-size: 15px;
+    gap: 35px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links button {
+    font-size: 15px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.884);
+    border-radius: 40px;
+    height: 40px;
+}
+
+.links > .middle > a:hover {
+    text-decoration: underline;
+}
+
+.last {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.last h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+
+.p {
+    margin-top: 0;
+    color: white;
+    width: 690px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+}
+
+.download , .open {
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    width: 300px;
+    height: 45px;
+    
+    font-size: 1.1rem;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.849);
+}
+
+.download {
+    background-color: white;
+    
+}
+
+.open {
+    background-color: black;
+    color: white;
+}
+
+.second {
+    width: 100vw;
+    height: 65vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding-top: 5px;
+    padding-inline: 45px;
+}
+
+.second img {
+    width: 520px;
+    height: 320px;
+}
+
+.second > div {
+   
+    padding: 0 14px;
+    
+    width: 350px;
+}
+
+.second > div > h1 {
+    font-size: 2.3rem;
+}
+
+.second > div > p {
+    line-height: 1.4;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.third h1 , .third p {
+    text-align: center;
+}
+
+.third h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.third p {
+    
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.third > div  {
+    padding-top: 14px;
+    
+    align-self: center;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third img {
+    width: 90%;
+}
