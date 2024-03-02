@@ -74,7 +74,7 @@ body , html {
 
 .last h1 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 4vw;
     margin-bottom: 0;
 }
 
@@ -83,7 +83,7 @@ body , html {
     color: white;
     width: 690px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: min(1.1rem, 2vw);
     line-height: 1.5;
     
 }
@@ -117,7 +117,7 @@ body , html {
 .second {
     width: 100vw;
     height: 65vh;
-    
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,24 +127,27 @@ body , html {
 }
 
 .second img {
-    width: 520px;
-    height: 320px;
+    
+    width: 60%;
+    height: 60%;
 }
 
 .second > div {
    
     padding: 0 14px;
     
-    width: 350px;
+    width: max(400px, 36%);
+    
 }
 
 .second > div > h1 {
-    font-size: 2.3rem;
+    font-size: max(1.5rem, 3vw);
+    
 }
 
 .second > div > p {
     line-height: 1.4;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: sans-serif;
 }
 
@@ -185,4 +188,41 @@ body , html {
 
 .third img {
     width: 90%;
+}
+
+@media (min-width: 350px) and (max-width: 1015px){
+
+    .middle {
+        display: none;
+    }
+
+
+
+
+    body, html {
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .second {
+        padding-top: 20px;
+        gap: 8px;
+        flex-direction: column;
+        flex-flow:column-reverse;
+    }
+
+    #this-column {
+        flex-flow: column;
+    }
+
+    .second > div {
+        width: 75%;
+    }
+
+    .second img {
+    
+        width: 100%;
+        height: 60%;
+    }
 }
