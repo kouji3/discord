@@ -120,7 +120,7 @@ body , html {
     height: 600px;
     
     margin-inline: auto;
-    
+   
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -246,6 +246,13 @@ body , html {
 
     .btns {
         padding-top: 20px;
+    }
+
+    
+
+    .second > div  {
+        padding-inline: auto;
+        width: 100%;
     }
 
     .open , .download {
